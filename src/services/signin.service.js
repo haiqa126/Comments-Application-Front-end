@@ -5,9 +5,9 @@ class SigninDataService {
 
   // verify if the user exists in the database
   verify(email, password) {
-    return http.get("/checkuser", {
+    return http.post("/checkuser", {
       email: email,
-      pass: password,
+      password: password,
     });
   }
 }

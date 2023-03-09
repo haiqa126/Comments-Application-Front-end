@@ -13,10 +13,10 @@ export const Signin = () => {
     console.log(event.target.email.value);
     console.log(event.target.password.value);
 
-    SigninDataService.verify({
-      email: event.target.email.value,
-      password: event.target.password.value,
-    })
+    SigninDataService.verify(
+      event.target.email.value,
+      event.target.password.value
+    )
       .then((response) => {
         console.log(response);
       })
