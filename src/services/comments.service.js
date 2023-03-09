@@ -7,7 +7,7 @@ class CommentsDataService {
 
   create(data) {
     return http.post("/create", {
-      data: data,
+      data: data, //this is the payload
     });
   }
 

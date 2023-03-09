@@ -7,6 +7,7 @@ const Routes = () => (
   <BrowserRouter>
     <Route exact path="/add" component={App} />
     <Route exact path="/create" component={App} />
+    <Route exact path="/checkuser" component={App} />
   </BrowserRouter>
 );
 
