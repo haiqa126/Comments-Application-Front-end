@@ -19,9 +19,10 @@ export const Signin = () => {
     )
       .then((response) => {
         console.log(response);
+        window.location = "/Homepage";
       })
       .catch((e) => {
-        console.log(e);
+        console.log(e.response);
       });
 
     return true;

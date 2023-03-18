@@ -2,13 +2,15 @@ import React from "react";
 import App from "./App";
 import { Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
+import Homepage from "./Homepage";
 
 const Routes = () => (
-  <BrowserRouter>
+  <Routes>
     <Route exact path="/add" component={App} />
     <Route exact path="/create" component={App} />
     <Route exact path="/checkuser" component={App} />
-  </BrowserRouter>
+    <Route exact path="/Homepage" component={Homepage} />
+  </Routes>
 );
 
 export default Routes;
